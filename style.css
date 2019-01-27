@@ -395,6 +395,7 @@ body{
 .view-portfolio{
     display: flex;
     margin-bottom: 70px;
+    height: 70px;
 }
 
 .view-portfolio h4{
@@ -405,23 +406,25 @@ body{
     text-transform: uppercase;
     font-size: 1.2rem;
 }
-.view-portfolio a{
+
+/* .view-portfolio a{
     width: 130px;
-    height: 50px;
+    height: 80px;
+    font-size: .6rem;
     background: #BFA876;
     color: white;
     text-transform: uppercase;
-    font-size: .9rem;
-    text-decoration: none;
-    text-align: center;
-    margin-top: -1rem;
-    margin-left: 100px;
-    transition: all 1s;
+    font-weight: 600;
+    font-size: .8rem;
+    transition: all.8s;
+    margin-top: 2rem;
+    margin-right: 3rem;
+
 }
 .view-portfolio a:hover{
     background: rgb(139, 124, 83);    
     transition: all 1s;
-}
+} */
 
 
 
@@ -1302,8 +1305,8 @@ footer p{
         top: 2rem;
         font-size: 1.5rem;
     }
-    .navbar-nav{
-        /* margin-left:6.5rem; */
+    #navbarTogglerDemo02 .navbar-nav{
+        margin-left:6.5rem;
         margin-top: 1rem;
     }
     .feature{
@@ -1657,8 +1660,30 @@ footer p{
     .item p:nth-child(3){
         font-size: 1.2rem;
     }
+    .view-portfolio {
+        overflow: hidden;
+    }
     .view-portfolio a{
-        margin-left: 22.5rem;
+        background: #BFA876;
+        font-size: .6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .8rem;
+        font-family: "Aleo";
+        transition: all.8s;
+        width: 100px;
+        height: 40px;
+        color: white;
+        font-size: .6rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .view-portfolio a:hover{
+        background: rgb(139, 124, 83);    
+        transition: all 1s;
     }
     .member .member-detail h5{
         font-size: 1rem;
@@ -1717,16 +1742,7 @@ footer p{
         align-items: center;
         justify-content: space-between;
     }
-    .view-portfolio a{
-        font-size: .8rem;
-        margin-top: -1rem;
-        padding-top: 8px;
-        width: 140px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
     .member-img img{
         height: 400px;
     }
@@ -1764,13 +1780,4 @@ footer p{
 }
 
 
-/* @media(max-width:1440px) and (min-width:1280px){
-    #navbar .nav-link{
-        min-width: 100%;
-    }
-    #navbar .socials{
-        min-width: 10%;
-    }
-
-} */
 

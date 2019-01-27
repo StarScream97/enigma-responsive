@@ -61,13 +61,19 @@ body{
 .navbar-brand>p{
     margin-bottom: -4px;
 }
-.nav-link{
-    color: white !important;
+#navbar .nav-link{
+    color: white;
     margin-right: 28px;
-    font-size: .9rem;
+    font-size: .75rem;
     font-family: "Arimo";
     font-weight: 700;
     line-height: 5px;
+    transition: all .8s;
+}
+#navbar .nav-item .nav-link:hover{
+    color: #BFA876;
+    transition: all .8s;
+
 }
 #showcase{
     width: 100%;
@@ -265,8 +271,8 @@ body{
 #buy-now{
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  padding-top: 140px;
-  padding-bottom: 177px;
+  /* padding-top: 140px;
+  padding-bottom: 177px; */
   background: #282828;
   color: white;
   position: relative;
@@ -274,6 +280,9 @@ body{
 }
 .buy-mac{
     grid-column: span 6;
+    /* margin-top: 150px; */
+    margin: 150px 0;
+
 }
 .slider{
     grid-column: span 6;
@@ -283,7 +292,8 @@ body{
 }
 .items{
     /* padding-top: 45px; */
-    margin-top: 25px;
+    margin: 150px 0;
+    /* margin-top: 25px; */
     overflow-x: hidden;
 }
 .item{
@@ -322,9 +332,9 @@ body{
     color: #575757;
     font-size: .9rem;
 }
-.controls{
+#buy-now .controls{
     position: absolute;
-    bottom: 10rem;
+    bottom: 11rem;
     left: 50%;
     display: flex;
 }
@@ -942,6 +952,9 @@ footer p{
         font-size: 15px;
         padding:1.2rem 1rem;
     }
+    #welcome p{
+        padding: 0 .5rem;
+    }
     .logo img{
         width: 150px;
         height: 150px;
@@ -1104,7 +1117,8 @@ footer p{
         margin-bottom: 1rem;
     }
     .member-img img{
-        height: 280px;
+        height: 320px;
+        width: 90%;
     }
     .member-detail h5{
         font-size: .8rem;
@@ -1194,7 +1208,8 @@ footer p{
         width: 100%;
         padding: 8px 10px;
     }
-    .contacts-wrapper{
+   
+   .contacts-wrapper{
         margin-top: 1rem;
     }
     .contact-header p{
@@ -1377,11 +1392,28 @@ footer p{
     }
 
     .view-portfolio a{
-        width: 100px;
+        /* width: 100px;
         height: 40px;
         font-size: .6rem;
         justify-content: center;
+        align-items: center; */
+        background: #BFA876;
+        font-size: .6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .8rem;
+        font-family: "Aleo";
+        transition: all.8s;
+        width: 100px;
+        height: 40px;
+        color: white;
+        font-size: .6rem;
+        justify-content: center;
         align-items: center;
+        padding: 0;
+        overflow: hidden;
+        margin-top: -.7rem;
+        margin-left: 3.5rem;
     }
  
     #process{
@@ -1424,31 +1456,19 @@ footer p{
         width: 250px;
         height: 250px;
     }
-    .client img{
+    #clients .client img{
         margin: 5px 50px;
     }
-    /* .clients .client2{
+    #clients .clients .client2{
         border-right: 0;
     }
-    .clients .client4{
+    #clients .clients .client4{
         border-right: 0;
     }
-    .clients .client3{
+    #clients .clients .client3{
         border-right: 1px solid #ccc;
     }
-    .clients .client4{
-        border-bottom: 1px solid #ccc;
-    } */
-    .clients .client2{
-        border-right: 0;
-    }
-    .clients .client4{
-        border-right: 0;
-    }
-    .clients .client3{
-        border-right: 1px solid #ccc;
-    }
-    .clients .client4{
+    #clients .clients .client4{
         border-bottom: 1px solid #ccc;
     }
 
@@ -1457,15 +1477,14 @@ footer p{
         margin-top: 3rem;
     }
 
-    .about-text h4{
-        font-size: .8rem;
-        font-weight: 800;
-    }
     .about-us .about-text p{
-        font-size: .7rem;
+        font-size: .65rem;
     }
     .about-us .about-text h4{
-        font-size: .8rem;
+        /* font-size: 1rem; */
+        font-size: 1rem;
+        font-weight: 800;
+        font-family: "Aleo";
     }
     .about-progress-bar .progress-label h5{
         font-size: .8rem;
@@ -1545,6 +1564,12 @@ footer p{
     .navbar-nav{
         margin-left: 0;
     }
+    body #navbar .collapse{
+        min-width: 60%;
+    }
+    body #navbar .socials{
+        min-width: 12%;
+    }
     .services{
         margin: 0 auto 33px auto;
         justify-content: center;
@@ -1601,6 +1626,9 @@ footer p{
     .client-text p{
         font-size: 1.2rem;
     }
+    #clients .client-text{
+        margin-bottom: 5rem;
+    }
 
    .client{
         margin: 0;
@@ -1610,32 +1638,32 @@ footer p{
     .client img{
         margin: 5px 50px;
     }
-    .client1,.client3,.client5{
+    #clients .client1,.client3,.client5{
         margin-right: 0;
     }
-    .client2,.client4,.client6{
+    #clients .client2,.client4,.client6{
         margin-left: 0;
     }
-    .clients .client2{
+    #clients .clients .client2{
         border-right: 1px solid #ccc;
     }
-    .clients .client3{
+    #clients .clients .client3{
         /* border-right: 1px solid #ccc; */
         border-right: 0;
     }
-    .clients .client4{
+    #clients .clients .client4{
         border-right: 1px solid #ccc;
         border-bottom: 0;
         margin-right: 0;
     }
-    .clients .client5{
+    #clients  .clients .client5{
         border-left: 0;
         margin-left: 0;
     }
-    .clients .client6{
+    #clients .clients .client6{
         margin-right: 0;
     }
-    .clients .client1{
+    #clients .clients .client1{
         margin-left: 0;
     }
 }
@@ -1656,6 +1684,12 @@ footer p{
     }
     #navbar .socials{
         min-width: 8%;
+    }
+    #navbar .nav-item .nav-link{
+        font-size: 1rem;
+    }
+    #navbar .socials{
+        font-size: 1.2rem;
     }
     .item p:nth-child(3){
         font-size: 1.2rem;
@@ -1679,6 +1713,7 @@ footer p{
         align-items: center;
         padding: 0;
         overflow: hidden;
+        margin-top: -.7rem;
     }
 
     .view-portfolio a:hover{
@@ -1699,6 +1734,10 @@ footer p{
     }
     .post-body p{
         font-size: 1.3rem;
+    }
+    #buy-now.items .post-controls{
+        position: absolute;
+        top: -8rem !important;
     }
     .post-controls i{
         font-size: 1.3rem;

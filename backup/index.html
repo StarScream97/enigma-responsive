@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="/javascript/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css">
+
+    <!-- <link rel="stylesheet" href="./javascript/slick-theme.css"> -->
+
+    <link rel="stylesheet" href="/style.css">
+    <title>Enigma</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="custom-container">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <div class="navbar-brand">
+                <p><span class="mr-3">E</span><span>N</span></p>
+                <p><span class="mr-3">G</span><span>M</span></p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse links" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-easing="easeInOutQuint" data-scroll href="#services">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-easing="easeInOutQuint" data-scroll href="#works">WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-easing="easeInOutQuint" data-scroll href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-easing="easeInOutQuint" data-scroll href="#blog">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-easing="easeInOutQuint" data-scroll href="#contact">CONTACT</a>
+                </li>
+
+            </ul>
+            <div class="socials d-flex justify-center">
+                <i class="fab fa-behance"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <!-- <video poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" playsinline controls>
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">    
+                    </video> -->
+        <!-- <video poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">    
+                    </video> -->
+
+        <img src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" alt="">
+    </section>
+
+    <section id="welcome" class="custom-container">
+        <h2 class="welcome-text text-center">
+            Welcome to enigma
+        </h2>
+        <p class="text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda alias tempora
+            nihil. Earum nemo voluptatem quis error eaque ad a nobis repellendus ipsum deserunt reiciendis minima
+            asperiores, itaque voluptates eius!</p>
+        <div class="logo">
+            <img src="./logo.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div id="features" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div class="feature1 feature">
+                <div class="feature-image"><i class="fas fa-flask"></i></div>
+                <div class="feature-text">
+                    <h4>1200</h4>
+                    <p>Design Experiments</p>
+                </div>
+            </div>
+            <div class="feature2 feature">
+                <div class="feature-image"><i class="fas fa-trophy"></i></div>
+                <div class="feature-text">
+                    <h4>578</h4>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+            <div class="feature3 feature">
+                <div class="feature-image"><i class="fas fa-envelope"></i></div>
+                <div class="feature-text">
+                    <h4>12489</h4>
+                    <p>Messages Sent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="custom-container">
+            <div class="service-text">
+                <h4>Our Services</h4>
+                <p class="line"></p>
+                <p>Continuously Creating Daring Digital Solutions</p>
+            </div>
+            <div class="services">
+                <div class="service" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Great Design</h4>
+                    <p>Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites.</p>
+                </div>
+                <div class="service service2" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Perfect Coding</h4>
+                    <p>
+                        Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites.
+                    </p>
+                </div>
+                <div class="service" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Great Design</h4>
+                    <p>Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites.</p>
+                </div>
+            </div>
+            <div class="services2 services">
+                <div class="service" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Great Design</h4>
+                    <p>Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites.</p>
+                </div>
+                <div class="service service2" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Great Design</h4>
+                    <p>Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites. </p>
+                </div>
+                <div class="service" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-image">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>Great Design</h4>
+                    <p>Our web design team will spend time with our digital marketing team to ensure the core
+                        principles of effective websites. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="buy-now">
+        <div class="buy-mac" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+            <img src="./macbookpro.png" alt="">
+        </div>
+
+        <div class="items slider multiple-items" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+            <div class="item1 item">
+                <p>Chase Your Dream</p>
+                <h4>BEST HTML TEMPLATE EVER</h4>
+                <p>We want to tell your brand's story with quality content that will help you inspire your audience,
+                    build meaningful connections and grow your success. Different marketing goals mean different
+                    content tools.</p>
+                <a class="purchase-button mt-2" href="">PURCHASE NOW</a>
+            </div>
+
+            <div class="controls">
+                <i class="fas fa-arrow-left mr-3"></i>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="works">
+        <div class="custom-container">
+            <div class="work-text">
+                <h4>Latest Works</h4>
+                <div class="line"></div>
+                <p>We Take Care For Every Detail</p>
+            </div>
+            <div class="works">
+                <div class="work" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images/Works/alexandru-acea-582050-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a class="view-work-button" href="">VIEW WORK</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images/Works/damian-zaleski-843-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a href="">VIEW WORK</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images//Works/david-rangel-708765-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a href="">VIEW WORK</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images/Works/ilya-pavlov-87472-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a href="">VIEW WORK</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images/Works/nikita-kachanovsky-494828-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a href="">VIEW WORK</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="./Images/Works/thomas-quaritsch-681766-unsplash.jpg" alt="">
+                    <div class="work-overlay">
+                        <a href="">VIEW WORK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-portfolio">
+                <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quart">have you fallen in
+                    love already with our works?</h4>
+                <a href="" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quart">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="process-overlay">
+            <div class="custom-container">
+                <div class="process-text" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h4>Our Process</h4>
+                    <div class="line"></div>
+                    <p>That's How We Do It</p>
+                </div>
+                <div class="processes">
+                    <div class="process" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="process-image">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="subprocess-text">
+                            <p>1.PLANNING</p>
+                        </div>
+                    </div>
+                    <div class="process" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="process-image">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="subprocess-text">
+                            <p>2. IDEA</p>
+                        </div>
+                    </div>
+                    <div class="process" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="process-image">
+                            <i class="far fa-edit"></i>
+                        </div>
+                        <div class="subprocess-text">
+                            <p>3. DESIGN</p>
+                        </div>
+                    </div>
+                    <div class="process" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="process-image">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="subprocess-text">
+                            <p>4.DEVELOPMENT</p>
+                        </div>
+                    </div>
+                    <div class="process" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="process-image">
+                            <i class="fas fa-columns"></i>
+                        </div>
+                        <div class="subprocess-text">
+                            <p>5. RESULT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-team">
+        <div class="team-text subheading">
+            <h4 class="">MEET OUR TEAM</h4>
+            <div class="line"></div>
+            <p class="text-center">Creative Nerds</p>
+        </div>
+        <div class="custom-container">
+            <div class="members">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="./Images/Team/fineas-gavre-345300-unsplash.jpg" alt="">
+                    </div>
+                    <div class="member-detail">
+                        <h5>SKYE</h5>
+                        <p>Designer</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="./Images/Team/kimson-doan-341946-unsplash.jpg" alt="">
+                    </div>
+                    <div class="member-detail">
+                        <h5>CATHERINE</h5>
+                        <p>MODEL</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="./Images/Team/toa-heftiba-547030-unsplash.jpg" alt="">
+                    </div>
+                    <div class="member-detail">
+                        <h5>KOSHKA</h5>
+                        <p>PHOTOGRAPHER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us-wrapper">
+        <div class="custom-container about-us">
+            <div class="about-text">
+                <h4>ABOUT US</h4>
+                <p>Our web design team will spend time with our digital marketing team to ensure the core principles of
+                    effective websites and development.</p>
+                <p>We want to tell your brand's story with quality content that will help you inspire your audience,
+                    build meaningful connections and grow your success. Different marketing goals mean different
+                    content tools.</p>
+            </div>
+            <div class="about-progress-bar">
+                <div class="progress-wrapper">
+                    <div class="progress-label">
+                        <h5>DESIGN</h5>
+                        <h5>100%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;   background-color:#BFA876"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-wrapper my-4">
+                    <div class="progress-label">
+                        <h5>MARKETING</h5>
+                        <h5>70%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;    background-color:#BFA876"
+                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="70">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-wrapper">
+                    <div class="progress-label">
+                        <h5>DEVELOPMENT</h5>
+                        <h5>90%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;    background-color:#BFA876"
+                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="blog-header text-center">
+            <h4>FROM BLOG</h4>
+            <div class="line"></div>
+            <p>Our Latest News</p>
+        </div>
+        <div class="custom-container posts">
+            <div class="post" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                <div class="post-image">
+                    <img src="./Images/Blog/brooke-lark-500141-unsplash.jpg" alt="">
+                </div>
+                <div class="post-body text-left">
+                    <h4>ALL PROCESS FOOD LAB STUDIO</h4>
+                    <span>by John Marshal | </span>
+                    <span>July 10,2015</span>
+                    <p class="mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum recusandae, minus aliquam
+                        aperiam, voluptate fugiat eligendi, qui velit quos nihil voluptatem nobis? A, delectus
+                        temporibus.
+                    </p>
+                    <a href="">READ MORE</a>
+                </div>
+            </div>
+            <div class="post" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                <div class="post-image">
+                    <img src="./Images/Blog/brooke-lark-500141-unsplash.jpg" alt="">
+                </div>
+                <div class="post-body">
+                    <h4>ALL PROCESS FOOD LAB STUDIO</h4>
+                    <span>by John Marshal | </span>
+                    <span>July 10,2015</span>
+                    <p class="mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum recusandae, minus aliquam
+                        aperiam, voluptate fugiat eligendi, qui velit quos nihil voluptatem nobis? A, delectus
+                        temporibus.
+                    </p>
+                    <a href="">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-controls text-center">
+           <a href=""><i class="fas fa-arrow-left mr-3"></i></a>
+           <a href=""><i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section id="clients">
+        <div class="custom-container">
+            <div class="client-text">
+                <h4>OUR CLIENTS</h4>
+                <div class="line"></div>
+                <p>They Trust Us</p>
+            </div>
+
+            <div class="clients">
+                <div class="client1 client" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client1.png" alt="">
+                </div>
+                <div class="client2 client" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client2.png" alt="">
+                </div>
+                <div class="client3 client" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client3.png" alt="">
+                </div>
+
+                <div class="client client4" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client4.png" alt="">
+                </div>
+                <div class="client5 client" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client5.png" alt="">
+                </div>
+                <div class="client client6" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quart">
+                    <img src="./Images/Clients/client6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="custom-container">
+            <div class="contact-header">
+                <h4>Contact Us</h4>
+                <div class="line"></div>
+                <p>Don't hesitate to get in touch. Please fill out this form and we'll get back to you within 48hrs. We
+                    hand picked to provide the right balance of skills to work.</p>
+            </div>
+            <div class="contact">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h5>GET IN TOUCH</h5>
+                        <p>Mon-Fri: 8:00-20:00</p>
+                    </div>
+                    <div class="contacts-wrapper">
+                        <div class="contacts">
+                            <div class="contact-type"><i class="far fa-compass"></i></div>
+                            <div class="ctext">
+                                <h5>ADDRESS</h5>
+                                <p>Philippiness,</p>
+                                <p>Greenwich st. 256/6, 62058</p>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <div class="contact-type"><i class="fas fa-phone"></i></div>
+                            <div class="ctext">
+                                <h5>CALL US</h5>
+                                <p>Philippiness,</p>
+                                <p>Greenwich st. 256/6, 62058</p>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <div class="contact-type">
+                                <i class="fas fa-at"></i>
+                            </div>
+                            <div class="ctext">
+                                <h5>E-MAIl</h5>
+                                <p class="email">enigmasuppport@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" class="form-control" name="" id="" cols="20" rows="8"></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+       
+    </section>
+
+    <footer>
+        <h5>ENIGMA</h5>
+        <div class="footer-socials">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-behance"></i></a>
+        </div>
+        <p>&copy; 2018 ENIGMA|DEVELOPMENT BY DEOTHEMES</p>
+
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2
+        joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.8/blank.mp4"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script src="./javascript/slick.js"></script>
+
+    <script src="./slider.js"></script>
+    <!-- <script type="text/javascript">
+            $(document).ready(function(){
+
+            $('.multiple-items').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 3,
+                    dots:true
+                });
+            });
+          </script> -->
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script type="text/javascript">
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([85.0346526, 27.4257595]),
+                zoom: 15
+            })
+        });
+    </script>
+
+</body>
+
+</html>
